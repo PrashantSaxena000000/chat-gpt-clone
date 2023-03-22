@@ -10,12 +10,13 @@ const errorHandler = require("./middelwares/errorMiddleware");
 const path = require("path");
 
 //static files
-app.use(express.static(path.join(__dirname, "./client/build")));
+// app.use(express.static(path.join(__dirname, "./client/build")));
 
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/indexedDB.html"));
-});
-//routes path
+// app.get("*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "./client/build/indexedDB.html"));
+// });
+
+// routes path
 const authRoutes = require("./routes/authRoutes");
 
 //dotenv
